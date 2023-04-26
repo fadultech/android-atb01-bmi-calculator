@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editPeso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editAltura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -52,30 +52,33 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editPeso" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="122dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="8dp"
+        android:id="@+id/textResultado"
+        android:layout_width="380dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="Resultado:"
+        android:layout_marginEnd="16dp"
+        android:text=" Resultado:"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/editAltura" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:onClick="calculaIMC"
         android:text="CALCULAR"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textResultado" />
 </androidx.constraintlayout.widget.ConstraintLayout>
